@@ -3,6 +3,15 @@ const exphbs = require('express-handlebars')
 const app = express()
 const port = 3000
 
+app.use(function (req, res, next) {
+  let time = new Date()
+  const taiwan = time.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })
+  if (req.url !== '/favicon.ico') {
+    console.log(`${taiwan} | ${req.method} from ${req.originalUrl}`)
+  }
+  next();
+})
+
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 

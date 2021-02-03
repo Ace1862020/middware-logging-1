@@ -12,14 +12,14 @@
 ## Environment Setup - 環境建置
 * Node.js(version - 10.15.0) - JavaScript 執行環境
 
-## Built with & Tools
+## Built with & Tools - 建置工具
 * npm (version - 6.4.1) - Node.js 的套件管理氣
 * nodemon (version - 2.0.7) - 伺服器輔助
 * Express Framework (version - 4.17.1) - 應用程式框架
 * Express-handlebars (version - 5.2.0) - 模板引擎
 * Visual Stuldio Code - 開發環境
 
-## Install 安裝
+## Install - 安裝
 1. 開啟終端機(Terminal) 或 (Git Bash) -> 到欲存放專案的本機位置 並執行:
 ```
 git clone https://github.com/Ace1862020/middware-logging-1.git
